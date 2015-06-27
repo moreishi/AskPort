@@ -16,7 +16,8 @@ var users = require('./routes/users');
 var posts = require('./routes/posts');
 var authenticate = require('./routes/authenticate');
 
-mongoose.connect('mongodb://localhost/test');
+// mongoose.connect('mongodb://localhost/test');
+mongoose.connect("mongodb://askportAdmin:admin!123@ds045057.mongolab.com:45057/askport");
 
 var app = express();
 
