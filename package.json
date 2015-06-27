@@ -19,6 +19,7 @@
     "jade": "~1.9.2",
     "jsonwebtoken": "^5.0.2",
     "mongoose": "^4.0.5",
+    "node-restful": "^0.1.18",
     "morgan": "~1.5.3",
     "serve-favicon": "~2.2.1"
   }
