@@ -1,0 +1,19 @@
+<div class="col-md-6 col-md-offset-3 content">
+
+  <h1 ng-if="stream.length < 1">Following your friends and answering steam questions will give you update from your stream page!</h1>
+
+  <div class="media media-post" ng-repeat="a in stream | orderBy: '-created_at'" ng-if="a.comments.length > 0">    
+    <div class="media-left">
+      <a href ng-click="profileId(a.user)">
+        <img class="media-object img-circle" ng-src="https://graph.facebook.com/{{a.user}}/picture?type=square&height=64&witdh=64" width="50px" height="50px" />
+      </a>
+    </div>
+    <div class="media-body">
+      <h5 class="media-heading"><strong>{{a.post}}</strong></h5>
+      <h6>{{ a.comments[a.comments.length-1].comment }}</h6>
+        <small am-time-ago="a.created_at"></small>
+        <!-- <small class="pull-right"><a href>2 people</a> like this</small> -->
+    </div>
+  </div>
+
+</div>

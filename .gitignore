@@ -2,3 +2,4 @@ $ cat .gitignore
 # exclude everything except directory foo/bar
 
 node_modules/*
+public_html/bower_components/*

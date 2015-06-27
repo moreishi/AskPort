@@ -1,0 +1,255 @@
+/* app css stylesheet */
+
+/* Imports */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:700italic);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+
+/* Import Golbal */
+.smGlobalBtn{ /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 2px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 25px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+}
+
+/* Social Buttons */
+/* facebook button class*/
+.facebookBtn{
+    background: #4060A5;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+    color: #4060A5;
+    background: #fff;
+}
+
+/* twitter button class*/
+.twitterBtn{
+    background: #00ABE3;
+}
+
+.twitterBtn:before{
+      font-family: "FontAwesome";
+      content: "\f099"; /* add twitter icon */
+}
+
+.twitterBtn:hover{
+      color: #00ABE3;
+      background: #fff;
+}
+
+/* google plus button class*/
+.googleplusBtn{
+    background: #e64522;
+}
+
+.googleplusBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d5"; /* add googleplus icon */
+}
+
+.googleplusBtn:hover{
+      color: #e64522;
+      background: #fff;
+}
+
+/* linkedin button class*/
+.linkedinBtn{
+    background: #0094BC;
+}
+
+.linkedinBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0e1"; /* add linkedin icon */
+}
+
+.linkedinBtn:hover{
+      color: #0094BC;
+      background: #fff;
+}
+
+/* pinterest button class*/
+.pinterestBtn{
+    background: #cb2027;
+}
+
+.pinterestBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d2"; /* add pinterest icon */
+}
+
+.pinterestBtn:hover{
+      color: #cb2027;
+      background: #fff;
+}
+
+/* tumblr button class*/
+.tumblrBtn{
+    background: #3a5876;
+}
+
+.tumblrBtn:before{
+      font-family: "FontAwesome";
+      content: "\f173"; /* add tumblr icon */
+}
+
+.tumblrBtn:hover{
+      color: #3a5876;
+      background: #fff;
+}
+
+/* rss button class*/
+.rssBtn{
+    background: #e88845;
+}
+
+.rssBtn:before{
+      font-family: "FontAwesome";
+      content: "\f09e"; /* add rss icon */
+}
+
+.rssBtn:hover{
+      color: #e88845;
+      background: #fff;
+}
+
+/* overrides */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+/*body {
+  background-image: url('http://1.bp.blogspot.com/_UdH8rcs3s1Q/TGdcNtKNxOI/AAAAAAAAAKM/-jvA0rVt9_E/s320/iPadBackgroundTexture-brown.png');
+  background-repeat: repeat-y repeat-x;
+}*/
+
+.title {
+  font-family: 'Lora', serif;
+}
+
+.content {
+  background-color: #FFF;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+
+  border-radius: 4px;
+  -moz-border-radius: 4px;  
+  -webkit-border-radius: 4px;  
+
+}
+
+.media-post {
+  border-bottom: 1px black !important;
+}
+
+.red {
+  color: red;
+}
+
+.h6 {
+  font-size: 12px;
+}
+
+.bg-color-none {
+  background-color: #ffffff !important;
+}
+
+.separator-bottom {
+  border-bottom: #000000 10px !important;
+}
+
+.navbar {
+  border-radius: 0px;
+}
+
+.jumbotron {
+  background-image: url('http://bodywell.com.au/wp-content/uploads/revslider/home2/img-33.jpg');
+  border-radius: 0px !important;
+}
+
+.jumboWhite, .jumboTitle {
+  color: #ffffff !important;
+}
+
+.member-thumbs {
+  font-family: 'Lobster', cursive !important;
+  font-size: 30px;
+}
+
+.jumboTitle {  
+  font-family: 'Droid Serif', serif;
+}
+
+.jumboSmall {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.member-thumbs {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.mem-row {
+  margin-top: 50px;
+}
+
+.thumbnail {
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+
+.container-fluid {
+  padding: 0px !important;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+}

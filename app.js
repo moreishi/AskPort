@@ -39,7 +39,7 @@ app.use(function(req, res, next) {
   next();
 });  
 
-app.use(express.static('public_html/app'));
+app.use(express.static('public_html/'));
 app.use('/api/users', users);
 app.use('/api/posts', posts);
 app.use('/api/authenticate/', authenticate);

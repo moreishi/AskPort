@@ -1,0 +1,30 @@
+<div class="col-md-6 col-md-offset-3 content">
+  
+  <div class="row">
+    <div class="col-md-6"><h4 class="title">Question</h4></div>
+    <div class="col-md-6"><a ng-click="fetchRandom()" class="btn btn-primary pull-right">Ask me a question</a></div>
+  </div>
+  
+  
+  <div class="row">
+    <h1></h1>
+    <div class="col-md-12">
+      <div class="media" ng-repeat="q in questions | orderBy: '-created_at'" ng-if="q.comments < 1">
+        <!-- <div class="media-left media-middle">
+          <a href="#">
+            <img class="media-object" src="..." alt="...">
+          </a>
+        </div> -->
+        <div class="media-body">
+          <h4 class="media-heading">{{q.post}}</h4>
+          <small>less than a minute ago</small>
+          <ol class="row breadcrumb bg-color-none separator-bottom">
+            <li><small><a href="#/questions/reply" ng-click="questionId(q._id)">Answer</a></small></li>
+            <li><small><a href>Leave a video answer</a></small></li>
+          </ol>
+        </div>
+      </div>
+    
+  </div>
+
+</div>
