@@ -66,7 +66,7 @@ factory('TokenInterceptor', ['$window','$q','AuthenticationService',function($wi
 }).
 config(['$routeProvider','$httpProvider','$facebookProvider',
   function($routeProvider,$httpProvider,$facebookProvider) {
-    $facebookProvider.setAppId('180162185520890');
+    $facebookProvider.setAppId('449152108596598'); // 180162185520890
     $facebookProvider.setPermissions("email,user_likes,user_friends");
     $httpProvider.interceptors.push('TokenInterceptor');
     $routeProvider.otherwise({redirectTo: '/'});    
