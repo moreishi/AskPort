@@ -5,6 +5,9 @@
   "scripts": {
     "start": "node ./public_html"
   },
+  "keywords": [
+    "heroku"
+  ],
   "dependencies": {
     "body-parser": "~1.12.4",
     "bower": "^1.4.1",
