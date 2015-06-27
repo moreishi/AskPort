@@ -10,6 +10,8 @@ var config = require('./config');
 var cors = require('cors');
 var expressJWT = require('express-jwt');
 
+var port = process.env.PORT || 3000;
+
 // ROUTES
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -76,6 +78,6 @@ app.use(function(err, req, res, next) {
   });
 });
 
-// app.listen(3000);
+app.listen(port);
 
 module.exports = app;
