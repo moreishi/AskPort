@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "node ./public_html"
+    "start": "node ./public_html",
+    "postinstall": "bower cache clean && bower install"
   },
   "keywords": [
     "heroku"
